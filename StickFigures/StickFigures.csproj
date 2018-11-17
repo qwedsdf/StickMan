@@ -241,6 +241,7 @@
     <Compile Include="Assets\Scripts\Button\TitleButton.cs" />
     <Compile Include="Assets\Scripts\Data\DefineData.cs" />
     <Compile Include="Assets\Scripts\Data\GameData.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyBase.cs" />
     <Compile Include="Assets\Scripts\etc\DontDestroy.cs" />
     <Compile Include="Assets\Scripts\etc\SingletonMonoBehaviour.cs" />
     <Compile Include="Assets\Scripts\Manager\SceneChangeManager.cs" />

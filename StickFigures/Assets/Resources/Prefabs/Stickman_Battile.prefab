@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 61982058687628458}
   m_Layer: 0
   m_Name: Stickman_Battile
-  m_TagString: Untagged
+  m_TagString: Stickman
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117,6 +117,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 910d78c32b92f3a4dbb9a690933c5c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AttackPowwer: 0
+  Enemy: {fileID: 0}
 --- !u!212 &212221955450511360
 SpriteRenderer:
   m_ObjectHideFlags: 1

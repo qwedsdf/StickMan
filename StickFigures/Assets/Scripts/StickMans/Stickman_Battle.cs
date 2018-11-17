@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Stickman_Battle : StickmanBase
 {
+	public float AttackPowwer;
 
 	// Use this for initialization
 	void Start () {
-		
+		AttackPowwer = 1;
 	}
 	
 	// Update is called once per frame
@@ -18,13 +19,5 @@ public class Stickman_Battle : StickmanBase
 	private void FixedUpdate()
 	{
 		Move(DefineData.LEFT);
-	}
-
-	private void OnTriggerEnter2D(Collider2D col)
-	{
-		if (col.tag == "Enemy")
-		{
-			Destroy(this.gameObject);
-		}
 	}
 }
