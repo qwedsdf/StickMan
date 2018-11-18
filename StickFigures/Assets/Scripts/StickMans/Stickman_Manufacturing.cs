@@ -32,4 +32,12 @@ public class Stickman_Manufacturing : StickmanBase
 		}
 		Move(direction);
 	}
+
+	private void OnCollisionEnter2D(Collision2D collision)
+	{
+		if (collision.gameObject.tag == "Wall")
+		{
+			direction = (int)Random.Range(0.0f, 3.9f);
+		}
+	}
 }

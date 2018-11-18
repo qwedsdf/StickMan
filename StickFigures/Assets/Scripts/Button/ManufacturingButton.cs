@@ -21,6 +21,11 @@ public class ManufacturingButton : MonoBehaviour {
 		Instantiate(Stickman, FromPos.position,Quaternion.identity);
 	}
 
+    public void LoadScene()
+    {
+        SceneChangeManager.Instance.LoadScene(DefineData.SCENE_GAME);
+    }
+
 	/// <summary>
 	/// タッチし、スティックマンをゲットしているかどうかを調べる
 	/// </summary>
