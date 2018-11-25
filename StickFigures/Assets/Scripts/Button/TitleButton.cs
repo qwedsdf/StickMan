@@ -16,6 +16,6 @@ public class TitleButton : MonoBehaviour {
 
 	void LoadScene()
 	{
-		if(Input.GetMouseButton(0)) SceneChangeManager.Instance.LoadScene(DefineData.SCENE_FACTURING);
+		if(Input.GetMouseButton(0))SceneChangeManager.Instance.LoadScene(DefineData.SCENE_FACTURING);
 	}
 }

@@ -1,16 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BattleButton : MonoBehaviour {
 	public GameObject Stickman;
     public float powwer;
     GameObject Cannon;
     Vector3 CannonAngle;
+    public Text Text_Stock;
 
 
     void Start () {
-        Cannon = GameObject.Find("Cannon").gameObject;
+        Cannon = GameObject.Find("CannonPivot").gameObject;
+        Text_Stock.text = GameData.StickmanStock.ToString();
     }
 	
 	void Update () {
@@ -19,6 +22,7 @@ public class BattleButton : MonoBehaviour {
 
 	public void FormStickman()
 	{
+        if (GameData.StickmanStock == 0) return;
 		Vector3 pos = new Vector3( Random.Range(0.0f,0.5f), Random.Range(0.0f, 1f),0f);
 		Vector3 pos1 = transform.position;
 		Vector3 pos2 = pos + pos1;
@@ -27,12 +31,20 @@ public class BattleButton : MonoBehaviour {
         Rigidbody2D rb = gameobject.GetComponent<Rigidbody2D>();
 
         GetCannonAngle();
-        rb.AddForce(CannonAngle * powwer, ForceMode2D.Impulse);
+        rb.AddForce(CannonAngle*powwer, ForceMode2D.Impulse);
+
+        GameData.StickmanStock--;
+        Text_Stock.text = GameData.StickmanStock.ToString();
     }
 
     public void GetCannonAngle()
     {
-        CannonAngle= Quaternion.Euler(Cannon.transform.localEulerAngles) * new Vector2(0f, 1f).normalized;
+        CannonAngle= Quaternion.Euler(Cannon.transform.localEulerAngles) *  new Vector2(0f, 1f).normalized;
         Debug.Log(CannonAngle);
+    }
+
+    public void ReturnFactory()
+    {
+        SceneChangeManager.Instance.LoadScene(DefineData.SCENE_FACTURING);
     }
 }

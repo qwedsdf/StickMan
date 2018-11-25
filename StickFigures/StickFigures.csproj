@@ -242,12 +242,18 @@
     <Compile Include="Assets\Scripts\Data\DefineData.cs" />
     <Compile Include="Assets\Scripts\Data\GameData.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyBase.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyData.cs" />
     <Compile Include="Assets\Scripts\etc\DontDestroy.cs" />
     <Compile Include="Assets\Scripts\etc\SingletonMonoBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Manager\RespawnItemManager.cs" />
     <Compile Include="Assets\Scripts\Manager\SceneChangeManager.cs" />
     <Compile Include="Assets\Scripts\StickMans\Stickman_Battle.cs" />
     <Compile Include="Assets\Scripts\StickMans\Stickman_Manufacturing.cs" />
     <Compile Include="Assets\Scripts\StickMans\StickmanBase.cs" />
+    <Compile Include="Assets\Scripts\Utility\CannonRotate.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\test.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

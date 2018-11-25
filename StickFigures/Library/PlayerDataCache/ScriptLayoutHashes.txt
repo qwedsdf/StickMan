@@ -2,10 +2,10 @@ Android
 PlayerPath?
 C:/Users/DELL/Documents/GitHub/StickMan/StickFigures/test.apk
 SceneListBegin?
-Assets/Scenes/00_Manager.unity
 Assets/Scenes/01_Title.unity
 Assets/Scenes/02_Manufacturing.unity
 Assets/Scenes/03_Game.unity
+Assets/Scenes/00_Manager.unity
 SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 4b12dd839b2293f8457cd67cc3610b85 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -20,6 +20,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 92d7a83ea3c7404e484f3b2eed421855 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 df374c01140c2d578bf70cbd60073d1d UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Stickman_Manufacturing
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CannonRotate
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -207,7 +208,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 3f32f08a64daf40b09ed864d96fe3840 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
-bdb107731a61828ab0b9bb998c1855c6 Assembly-CSharp.dll:.BattleButton
+6905c78cfec030744bc4af9aa8c8016a Assembly-CSharp.dll:.BattleButton
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BackImageSetUp
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 82760860e3f4b3f1acf05d4e555ba5bf UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController

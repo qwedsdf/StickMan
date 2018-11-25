@@ -8,6 +8,7 @@ TagManager:
   - Stickman
   - Wall
   - floor
+  - RotateArea
   layers:
   - Default
   - TransparentFX
